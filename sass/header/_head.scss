@@ -29,6 +29,66 @@
 		float: left;
 		width: 100%;
 		margin-top: 20px;
+		&--city {
+			p {
+				color: #555;
+				font-size: 14px;
+				margin-bottom: 0;
+				b {
+					font-weight: 900;
+					font-size: 16px;
+					color: #222;
+					margin-left: 7px;
+				}
+				i {
+					color: #DDD;
+					margin-right: 7px;
+				}
+			}
+			&--btn {
+				color: #FFF;
+				display: block;
+				float: left;
+				font-size: 13px;
+				padding: 7px 15px;
+				text-decoration: none;
+				@include border-radius(3px);
+				@include background-clip(padding-box);
+				background-color: #1585cf;
+				@include box-shadow(0,2px,3px,rgba(16,18,17,.15));
+				background-color: #1585cf;
+				background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDgyIDI1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImhhdDAiIGdyYWRpZW50VW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4MT0iNTAlIiB5MT0iMTAwJSIgeDI9IjUwJSIgeTI9Ii0xLjQyMTA4NTQ3MTUyMDJlLTE0JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxMDExMTAiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjgyIiBoZWlnaHQ9IjI1IiBmaWxsPSJ1cmwoI2hhdDApIiAvPgo8L3N2Zz4=);
+				background-image: -moz-linear-gradient(bottom, rgba(16,18,16,.15) 0%, rgba(255,255,255,.15) 100%);
+				background-image: -o-linear-gradient(bottom, rgba(16,18,16,.15) 0%, rgba(255,255,255,.15) 100%);
+				background-image: -webkit-linear-gradient(bottom, rgba(16,18,16,.15) 0%, rgba(255,255,255,.15) 100%);
+				background-image: linear-gradient(bottom, rgba(16,18,16,.15) 0%, rgba(255,255,255,.15) 100%);
+				text-decoration: none;
+				@include transition(.3s);
+				margin-left: 95px;
+				&:hover, &:active, &:focus {
+					text-decoration: none;
+					color: #FFF;
+					background-color: darken(#1585CF,10%);
+				}
+			}
+		}
+		&--phone {
+			h3 {
+				font-size: 30px;
+				font-weight: 900;
+				color: #222;
+				margin: 0;
+				i {
+					color: #DDD;
+					margin-right: 7px;
+				}
+			}
+			p {
+				font-size: 14px;
+				color: #555;
+				margin-left: 20px;
+			}
+		}
 	}
 	&--btns {
 		text-align: right;			
@@ -50,6 +110,7 @@
 				margin: 0 auto;
 			}
 			.header--prof--open {
+				z-index: 9;
 				display: none;
 				position: absolute;
 				right: 0;
