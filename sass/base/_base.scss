@@ -1,0 +1,56 @@
+*{
+	padding: 0;
+	margin:0;
+}
+
+html {
+	margin-top: 0;
+	padding-top: 0;
+	height: 100%;
+}
+
+body {	
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	&:hover, &:focus, &:active{
+		outline: none;
+	}
+}
+
+ul {
+	list-style-type: none;
+}
+
+.block-title {
+	font-size: 30px;
+	text-align: center;
+	color: #222;
+	font-weight: 200;
+}
+
+.p0  {
+	padding: 0;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+
+img {
+	border: none;
+}
+
+
+
+
+
+
+
