@@ -6,8 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fotorama.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="sass/style.css">
     <!--[if lte IE 11]>
@@ -100,7 +101,6 @@
 							</div>	
 						</div>						
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -109,7 +109,24 @@
 	<article class="main-banner">
 		<div class="container">
 			<div class="row">
-				
+				<div class="main-banner--box">
+					<div class="fotorama" data-width="100%" data-ratio="1132/484" data-fit="cover" data-autoplay="true" data-loop="true" data-arrows="false">
+						<div data-img="img/man.jpg">
+							<div class="main-banner--content">
+								<h4>выбирай лучшее!</h4>
+								<h1>Только качественный протеин для твоих тренировок!</h1>
+								<a href="#" class="main-banner--content--link">Подробнее<i class="fa fa-angle-double-right"></i></a>
+							</div>							
+						</div>
+						<div data-img="img/man.jpg">
+							<div class="main-banner--content">
+								<h4>выбирай лучшее!</h4>
+								<h1>Только качественный протеин для твоих тренировок!</h1>
+								<a href="#" class="main-banner--content--link">Подробнее<i class="fa fa-angle-double-right"></i></a>
+							</div>							
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</article>
@@ -117,11 +134,16 @@
 	<section class="content">
 		<div class="container">
 			<div class="row">
-                <div class="col-lg-3 col-sm-12 col-xs-12">
-                    <div class="content__sidebar-left">
-                        <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"> 
+                	<div class="row">
+                    	<div class="content__sidebar-left">
+                       		<div class="content__sidebar-left--head">
+                       			<h3>
+                       				каталог 
+                       				<a href="#" class="content__sidebar-left--toggle"><i class="fa fa-bars"></i></a>
+                       			</h3> 
+                       		</div>  
                             <div class="content__sidebar-left--catalog">
-                                <h3>каталог</h3>
                                 <ul>
                                     <li><a href="">Протеины</a></li>
                                     <li><a href="">Аминокислоты</a></li>
@@ -219,7 +241,8 @@
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script src="js/fotorama.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

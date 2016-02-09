@@ -1,0 +1,25 @@
+.main-banner--box {
+	.fotorama__nav-wrap {
+	    margin-top: -40px;
+	    height: 40px;
+	    margin-bottom: 0;
+	}
+	.fotorama__dot {
+		border: 1px solid #222222;
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+	}		
+	.fotorama__nav__frame.fotorama__active .fotorama__dot {
+		width: 10px;
+		height: 10px;
+		background-color: #222222;
+		border: none;	
+	}
+	.fotorama__nav {
+		font-size: 0;
+		line-height: 0;
+		text-align: left;
+		padding-left: 50px;
+    }
+}
