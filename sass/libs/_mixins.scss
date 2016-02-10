@@ -60,3 +60,12 @@
 		clear: both;
 	}
 }
+
+@mixin grayscale($n) {
+	-webkit-filter: grayscale($n);
+	-moz-filter: grayscale($n);
+	-ms-filter: grayscale($n);
+	-o-filter: grayscale($n);
+	filter: grayscale($n);
+	filter: gray; /* IE 6-9 */
+}
