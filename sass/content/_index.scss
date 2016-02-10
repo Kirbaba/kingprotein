@@ -83,13 +83,19 @@
   &__sidebar-left {
     display: block;
     position: relative;
-    width: 100%;
-    float: left;
-    border: 1px solid #d0d0d0;
-    background-color: #fff;
-    @include box-shadow(0, 3px, 4px, rgba(0, 0, 0, .1));
-    @include border-radius(5px);
-    overflow: hidden;
+    width: 20%;
+    float: left;	
+	&__catalog {
+		display: block;
+		position: relative;
+		float: left;
+		width: 100%;
+		border: 1px solid #d0d0d0;
+		background-color: #fff;
+		@include box-shadow(0, 3px, 4px, rgba(0,0,0,.1));
+		@include border-radius(5px);
+		overflow: hidden; 
+	}   
     &--head {
       display: block;
       width: 100%;
@@ -144,7 +150,12 @@
 
       }
     }
-    &--catalog {
+    &__sidebar-right {
+    	display: block;
+    	float: left;
+    	width: 20%;
+    }
+    &--catalog--list {
       &--counter {
         display: inline-block;
         margin-left: 10px;
@@ -256,4 +267,33 @@
 
 }
 
+.main-wrap {
+	display: block;
+	float: left;
+	position: relative;
+	width: 60%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 30px;
+}
 
+.quick-choice {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	@include border-radius(3px);
+	@include background-clip(padding-box);
+	background-color: #fff;
+	@include box-shadow(0,3px,4px,rgba(0,0,0,.1));
+	&--head {
+		h3 {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			margin: 20px 0;
+		}
+	}
+}
