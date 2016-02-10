@@ -144,6 +144,12 @@
 		}
     }    
     &--catalog {
+    	&--counter {
+    		display: inline-block;
+    		margin-left: 10px;
+    		font-size: 15px;
+    		color: #999;
+    	}
       ul{
         display: block;
         padding: 0;
@@ -169,6 +175,7 @@
         	@include transition(.3s);
           }
           a:hover{
+          	text-decoration: underline;
             background-color: rgb(232,232,232);
           }
         }

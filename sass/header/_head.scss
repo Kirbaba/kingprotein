@@ -223,13 +223,45 @@
 			background-color: #1589d5;
 			@include box-shadow(inset 0, 1px, 0, rgba(255,255,255,.3));
 			@include transition(.2s);
+			position: relative;
 			&:hover {
 				background-color: darken(#1589D5,10%);
-			}
+				.header--basket--counter {
+					display: block;
+				}
+			}			
 		}
 	}
 	
 }
 
+.header--basket--counter {
+	display: none;
+	@include transition(.3s);
+	position: absolute;
+	padding: 3px 7px;
+	color: #222;
+	@include border-radius(3px);
+	background-color: #FFF;
+	top: -10px;
+	right: 10px;
+	z-index: 9;
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		border-top: 3px solid #fff;
+		position: absolute;
+		bottom: -3px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
+}
 
 
