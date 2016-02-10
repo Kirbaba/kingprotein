@@ -84,6 +84,7 @@
     position: relative;
     width: 100%;
     float: left;
+    margin-right: 30px;
 	border: 1px solid #d0d0d0;
 	background-color: #fff;
 	@include box-shadow(0, 3px, 4px, rgba(0,0,0,.1));
@@ -184,4 +185,22 @@
   }
 }
 
-
+.quick-choice {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	border: 1px solid #d0d0d0;
+	@include border-radius(3px);
+	@include background-clip(padding-box);
+	background-color: #fff;
+	@include box-shadow(0,3px,4px,rgba(0,0,0,.1));
+	&--head {
+		h3 {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			margin: 20px 0;
+		}
+	}
+}
