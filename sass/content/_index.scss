@@ -224,7 +224,36 @@
       top: 75px;
       z-index: 2;
     }
+    &--item{
+      border: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #e7e7e7;
+      padding: 20px;
+    }
+    &__date{
+      font-size: 13px;
+      font-family: $pt;
+      color: #1589d5;
+      span{
+        font-size: 13px;
+        font-family: $pt;
+        color: #a1a1a1;
+      }
+    }
+    &__header{
+      font-size: 15px;
+      font-family: $pt;
+      color: #212121;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    &__text{
+      font-size: 14px;
+      font-family: $pt;
+      color: #212121;
+    }
   }
+
 }
 
 

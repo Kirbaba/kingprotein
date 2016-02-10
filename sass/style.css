@@ -619,6 +619,29 @@ img {
       left: 28px;
       top: 75px;
       z-index: 2; }
+    .content .home-news--item {
+      border: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #e7e7e7;
+      padding: 20px; }
+    .content .home-news__date {
+      font-size: 13px;
+      font-family: "PT Sans", sans-serif;
+      color: #1589d5; }
+      .content .home-news__date span {
+        font-size: 13px;
+        font-family: "PT Sans", sans-serif;
+        color: #a1a1a1; }
+    .content .home-news__header {
+      font-size: 15px;
+      font-family: "PT Sans", sans-serif;
+      color: #212121;
+      font-weight: bold;
+      text-decoration: underline; }
+    .content .home-news__text {
+      font-size: 14px;
+      font-family: "PT Sans", sans-serif;
+      color: #212121; }
 
 .footer {
   dispalay: block;
