@@ -112,3 +112,44 @@ button.slick-prev.slick-arrow {
 	}
 
 }
+.separator {
+	display: block;
+	position: relative;
+	margin: 5px auto 30px;
+	width: 200px;
+	border-bottom-style: solid;
+	border-bottom-color: #1589d5;
+	&:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #1589d5;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+           -o-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: -12px;
+    }
+    &:before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid #ffffff;
+		position: absolute;
+		left: 50%;
+		bottom: -7px;
+		z-index: 2;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		  	-ms-transform: translateX(-50%);
+			 -o-transform: translateX(-50%);
+		      	transform: translateX(-50%);
+    }
+}
