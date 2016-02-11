@@ -138,6 +138,7 @@
         font-size: 18px;
         color: #222;
         text-transform: uppercase;
+        font-weight: bold;
         a {
           display: block;
           float: right;
@@ -398,6 +399,7 @@
 }
 
 .quick-choice {
+<<<<<<< HEAD
   display: block;
   float: left;
   position: relative;
@@ -485,4 +487,397 @@
       }
     }
   }
+
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	border: 1px solid #d0d0d0;
+	@include border-radius(3px);
+	@include background-clip(padding-box);
+	background-color: #fff;
+	@include box-shadow(0,3px,4px,rgba(0,0,0,.1));
+	&--head {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		h3 {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			margin: 20px 0;
+		}
+	}
+	&--box {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		height: 146px;
+		@include background-clip(padding-box);
+		background-color: #f3f3f3;
+		@include box-shadow(0,2px,4px,rgba(0,21,73,.12));
+	}
+	&--sex, &--target, &--age {
+		display: block;
+		float: left;
+		position: relative;
+		width: 1 / 3 * 100%;
+		padding: 20px 0;
+		height: 100%;
+		h4 {
+			font-weight: bold;
+			font-size: 17px;
+			color: #222;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+	}
+	
+	&--sex {		
+		@include background-clip(padding-box);		
+		text-align: center;
+		padding-right: 40px;
+		margin-right: -55px;
+		width: 38%;
+		z-index: 9;		
+		&-m {
+			display: inline-block;
+			width: 60px;
+			margin: 0 10px;			
+			color: #79B5E2;
+			text-decoration: none;
+			&--icon {
+				display: block;
+				position: relative;
+				margin: 0 auto;
+				height: 41px;
+				width: 37px;
+				background-image: url('../img/sex-icon.png');
+				background-repeat: no-repeat;
+				background-position: -38px 0;				
+			}
+			&:hover {
+				text-decoration: none;
+				.quick-choice--sex-m--icon {
+					background-position: 0 0;
+				}
+				color: #fff;
+			}
+		}
+		&-f {
+			display: inline-block;
+			width: 60px;
+			margin: 0 10px;			
+			color: #79B5E2;
+			text-decoration: none;
+			&--icon {
+				display: block;
+				margin: 0 auto;
+				height: 41px;
+				width: 30px;
+				background-image: url("../img/sex-icon.png");
+				background-position: -79px 0px;
+				background-repeat: no-repeat;
+			}
+			&:hover {		
+				text-decoration: none;		
+				.quick-choice--sex-f--icon {
+					background-position: -111px 0;
+				}
+				color: #FFF;
+			}
+		}
+	}
+	&--target {
+		z-index: 8;
+		margin-right: -32px;
+		width: 43%;
+		padding: 20px 50px 20px 40px;
+		background-image: url('../img/choice-bg.png');
+		background-repeat: no-repeat;
+		background-position: 100% 50%;
+		&-top {
+			display: inline-block;
+			width: 60px;
+			margin: 0 10px;			
+			color: #79B5E2;
+			text-align: center;
+			text-decoration: none;
+			&--icon {
+				display: block;
+				margin: 0 auto;
+				height: 41px;
+				width: 39px;
+				background-image: url("../img/choice-arrows.png");
+				background-position: 0px 0px;
+				background-repeat: no-repeat;
+			}
+			&:hover {		
+				text-decoration: none;		
+				.quick-choice--target-top--icon {
+					background-position: -78px 0;
+				}
+				color: #FFF;
+			}
+		}
+		&-bot {
+			display: inline-block;
+			width: 60px;
+			margin: 0 10px;			
+			color: #79B5E2;
+			text-decoration: none;
+			text-align: center;
+			&--icon {
+				display: block;
+				margin: 0 auto;
+				height: 41px;
+				width: 39px;
+				background-image: url("../img/choice-arrows.png");
+				background-position: -38px 0px;
+				background-repeat: no-repeat;
+			}
+			&:hover {		
+				text-decoration: none;		
+				.quick-choice--target-bot--icon {
+					background-position: -117px 0;
+				}
+				color: #FFF;
+			}
+		}
+	}
+	.quick-choice--age {
+	    width: 224px;
+	    margin-left: -23px;
+	    background-size: 150%;
+	    background-position: 0;
+	    padding-left: 35px;
+	    
+	    &-19 {
+	    	@extend .quick-choice--target-bot;
+	    	margin: 0;
+	    	width: 55px;
+	    	z-index: 9;
+	    	&--icon {
+				display: block;
+				margin: 0 auto;
+				height: 39px;
+				width: 44px;
+				background-image: url("../img/age.png");
+				background-position: 3px 0px;
+				background-repeat: no-repeat;
+			}
+			&:hover {				
+				.quick-choice--age-19--icon {
+					background-position: -162px 0;
+				}
+			}
+	    }
+	    &-25 {
+	    	@extend .quick-choice--target-bot;
+	    	margin: 0;
+	    	width: 55px;
+    		&--icon {
+				display: block;
+				margin: 0 auto;
+				height: 39px;
+				width: 44px;
+				background-image: url("../img/age.png");
+				background-position: -61px 0px;
+				background-repeat: no-repeat;
+			}
+			&:hover {				
+				.quick-choice--age-25--icon {
+					background-position: -230px 0;
+				}
+			}
+	    }
+	    &-40 {
+	    	@extend .quick-choice--target-bot;
+	    	margin: 0;
+	    	width: 55px;
+    		&--icon {
+				display: block;
+				margin: 0 auto;
+				height: 39px;
+				width: 44px;
+				background-image: url("../img/age.png");
+				background-position: -121px 0px;
+				background-repeat: no-repeat;
+			}
+			&:hover {				
+				.quick-choice--age-40--icon {
+					background-position: -289px 0;
+				}
+			}
+	    }
+	}
+	&--active {
+		background-image: url('../img/choice-bg-1.png');
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		background-position: 100% 50%;
+		h4 {
+			color: #FFF;
+		}
+	}
+	&--separator {
+		display: inline-block;
+		width: 14px;
+		height: 24px;
+		top: -25px;
+		margin: 0 -7px;
+		position: relative;
+		background-image: url('../img/separator.png');
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		
+	}
+
+	&--checked {
+		@extend .header--basket--counter;
+		display: block;
+		background-color: #FFCE06;
+		left: 40%;
+		right: inherit;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		&:after {
+			border-top: 3px solid #FFCE06;
+		}
+	}
+	.quick-choice--age {
+		.quick-choice--checked {
+			left: 55%;
+		}
+	}
+
+}
+
+.whyweare {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	h3 {
+		font-size: 20px;
+		color: #222;
+		text-align: center;
+		margin: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__item {
+		display: block;
+		float: left;
+		position: relative;
+		width: 20%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 0 5px;
+		margin: 15px 0;
+		&--img {
+			display: block;
+			margin: 0 auto;
+			width: 89px;
+			height: 89px;
+			@include border-radius(50%);
+			line-height: 89px;
+			text-align: center;
+			@include background-clip(padding-box);
+			background-color: #efece1;
+		}
+		&--desc {
+			display: block;
+			float: left;
+			width: 100%;
+			margin-top: 15px;
+			text-align: center;
+			height: 70px;
+			p {
+				color: #222;
+				font-size: 15px;
+			}
+		}
+	}
+
+}
+
+.home-information {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 15px 0 35px;
+	h2 {
+		font-size: 30px;
+		color: #222;
+		font-weight: bold;
+		margin: 10px 0;
+	}
+	p {
+		margin: 10px 0;
+		color: #222;
+		font-size: 15px;
+		line-height: 23px;
+		display: block;
+		float: left;
+		width: 100%;
+		img {
+			float: left;
+			margin-right: 15px;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		color: #222;
+		font-weight: bold;
+		margin: 25px 0;
+	}
+	&--callcenter {
+		display: block;
+		float: right;
+		position: relative;
+		width: calc(100% - 34px);
+		margin: 15px 0;
+		background-color: #efebe1;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 10px 80px 10px 60px;
+		&--icon {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: -33px;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+			@include border-radius(50%);
+			background-image: url('../img/call-center.png');
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			width: 66px;
+			height: 66px;
+			border: 2px solid #efebe1;
+			@include border-radius(34px);
+			@include background-clip(padding-box);
+			background-color: #fff;
+
+		}
+	}
+
 }
