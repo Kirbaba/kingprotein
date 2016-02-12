@@ -13,7 +13,16 @@ $( document ).ready(function() {
 	        arrows: true,        
 	        slidesToShow: 1,
 	        focusOnSelect: false,
-	        slidesToScroll: 1
-	    });
+	        slidesToScroll: 1,
+			responsive: [
+				{
+				    breakpoint: 770,
+				    settings: {
+				        adaptiveHeight: false
+				    }
+				}
+			]
+		});
+
 	});
 });
