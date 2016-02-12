@@ -52,12 +52,12 @@
     <div class="container">
         <div class="">
             <div class="header__box">
-                <div class="col-lg-3 col-md-3 col-sm-4">
+                <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
                     <a href="#" class="header--logo">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-5">
+                <div class="col-lg-6 col-md-6 col-sm-5 hidden-xs">
                     <div class="row">
                         <div class="header__info">
                             <div class="col-lg-5 col-md-5 hidden-sm">
@@ -76,34 +76,107 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <div class="row">
                         <div class="header--btns">
+                            <a href="#" class="header--catalog content__sidebar-left--toggle">
+                                <img src="img/notepad.png" alt="">
+                                Каталог				                    						
+                            </a>
                             <a href="#" class="header--prof">
                                 <img src="img/user.png" alt="">
                                 Профиль
-									<span class="header--prof--open">		
-										<span class="header--prof--open--form">
-											<input type="text" class="header--prof--open--inp" placeholder="Логин">
-											<input type="text" class="header--prof--open--inp" placeholder="Пароль">
-											<input type="submit" class="header--prof--open--btn" value="Войти">
-										</span>										
-										<span class="header--prof--open--foot">
-											<p>Ещё не зарегистрированы?</p>
-											<button class="header--prof--open--reg" value=""> Зарегистрироваться
-                                            </button>
-										</span>
+								<span class="header--prof--open">		
+									<span class="header--prof--open--form">
+										<input type="text" class="header--prof--open--inp" placeholder="Логин">
+										<input type="text" class="header--prof--open--inp" placeholder="Пароль">
+										<input type="submit" class="header--prof--open--btn" value="Войти">
+									</span>										
+									<span class="header--prof--open--foot">
+										<p>Ещё не зарегистрированы?</p>
+										<button class="header--prof--open--reg" value=""> Зарегистрироваться
+                                        </button>
 									</span>
+								</span>
                             </a>
                             <a href="#" class="header--basket">
                                 <img src="img/basket.png" alt="">
                                 Корзина
                                 <span class="header--basket--counter">0</span>
                             </a>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
+            <ul class="header--catalog--list">
+                <li>
+                    <a href="#">Протеины
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Аминокислоты
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Гейнеры
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Креатин
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Картинин
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Бустеры тест
+                        естерона
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Предтренерово чные комплексы
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Аксесуары
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Витамины и минералы
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Энергетики и жиросжигатели
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Капсулы для набора
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Суставы и связки
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Желотиновые
+                        капсулы
+                        <span class="content__sidebar-left--catalog--counter">1</span>
+                    </a>
+                </li>
+            </ul>
              <div class="visible-sm col-sm-5 col-sm-offset-4" >
                 <div class="header__info--city">
                     <p><i class="fa fa-map-marker"></i> Ваш город: <b>Москва</b></p>
@@ -669,7 +742,7 @@
 
 <footer class="footer">
     <div class="container">
-    	<div class="visible-sm col-sm-12">
+    	<div class="visible-sm col-sm-12 visible-xs col-xs-12">
             <div class="footer__menu">
                 <ul>
                     <li><a href="#">О компании</a></li>
@@ -684,7 +757,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-4 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 
             <div class="footer__social">
                 <a href="#" class="footer__social--link">
@@ -705,7 +778,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-4 col-xs-9">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
             <div class="footer__info">
 
                 <p>Бесплатная горячая линия по России:</p>
@@ -720,7 +793,7 @@
         </div>
 
 
-        <div class="col-lg-3 hidden-sm">
+        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
             <div class="footer__menu">
                 <ul>
                     <li><a href="#">О компании</a></li>
@@ -736,7 +809,7 @@
             </div>
         </div>
 
-        <div class="col-lg-3 col-sm-4 col-xs-9">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
             <div class="footer__text">
 
                 <p>&copy;Copyright, 2016 Kingprotein.ru,</p>

@@ -3,6 +3,10 @@ $( document ).ready(function() {
         e.preventDefault();
         $(".content__sidebar-left--catalog--list").slideToggle("slow");
     });
+    $(".header--catalog").click(function(e) {
+        e.preventDefault();
+        $(".header--catalog--list").slideToggle("slow");
+    });
     jQuery(function ($) {
 	    jQuery('.home-comments--body').slick({
 	        dots: false,
