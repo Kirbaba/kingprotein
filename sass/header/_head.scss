@@ -270,14 +270,31 @@
 		@include background-clip(padding-box);
 		background-color: #fff;
 		@include box-shadow(0,3px,4px,rgba(0,0,0,.1));
+		li {
+			display: block;
+			width: 100%;
+			a {
+				display: block;
+				font-size: 15px;
+				color: #222;
+				padding: 10px;
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				&:hover {
+					background-color: #E8E8E8;
+				}
+			}
+		}
 		&:before {
 			content: "";
 			display: block;
 			position: absolute;
 			left: 34px;
 		    top: -12px;
-		    border-left: 6px solid transparent;
-		    border-right: 6px solid transparent;
+		    border-left: 8px solid transparent;
+		    border-right: 8px solid transparent;
 		    border-bottom: 12px solid #d0d0d0;
 		}
 		&:after {
@@ -286,8 +303,8 @@
 			position: absolute;
 			left: 35px;
 			top: -9px;
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
 			border-bottom: 9px solid #fff;
 		}
 	}
